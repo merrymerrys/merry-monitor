@@ -9,6 +9,8 @@ export default defineUserConfig({
   title: "Merry Monitor",
   description: "Merry Monitor 的使用文档",
 
+  dest: "./docs",
+
   theme,
 
   plugins: [
