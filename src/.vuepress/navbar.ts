@@ -4,6 +4,7 @@ export default navbar([
   "/quick-start",
   "/guide/",
   "/changelog",
+  "/version",
   "/download",
   // {
   //   text: "下载地址",
