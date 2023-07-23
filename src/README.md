@@ -31,19 +31,19 @@ features:
 
   - title: XML配置
     icon: code
-    details: 对配置文件提供可视化界面，减少手动修改的繁琐
+    details: 配置文件提供可视化界面，减少手动修改的繁琐
 
   - title: 网络协议
     icon: globe
-    details: 统一抽象的网络接口，提供不同类型的数据结构支持
+    details: 统一的网络接口，提供不同类型的数据结构支持
 
   - title: 项目扩展
     icon: users
-    details: 允许使用自定义项目分组、通道类型与属性
+    details: 允许自定义项目分组、通道类型与属性
 
   - title: 功能统一
     icon: crown
-    details: 高效的设计模式，向下兼容不同版本，适应不同的设计需求
+    details: 高效的设计模式，向下兼容过往版本，适应不同需求
 
   - title: 多开支持
     icon: align-center
