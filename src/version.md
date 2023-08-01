@@ -1,6 +1,6 @@
 ---
 title: 版本信息
-icon: clock
+icon: box-archive
 ---
 
 ::: warning

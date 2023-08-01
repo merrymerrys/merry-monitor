@@ -15,7 +15,7 @@ icon: lightbulb
 3. [建立一个测试任务](./excel.md#新建任务)
 4. [测量误差的解释](./excel.md#测量误差)
 5. [校准文件的下载](./excel.md#线性回归)
-6. [图表功能页的工具栏标注](./dataview.md#页面标注)
+6. [图表页的工具栏标注](./dataview.md#页面标注)
 7. [截图功能](./dataview.md#屏幕截图)
-8. [XML配置文件的可视化修改方式](./xmlview.md#通道配置)
+8. [XML配置的可视化修改方式](./xmlview.md#通道配置)
 
