@@ -1,7 +1,6 @@
 ---
 title: 工艺信号
 icon: file
-order: 1
 date: 2023-08-01
 category:
   - 使用指南

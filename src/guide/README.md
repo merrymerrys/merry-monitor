@@ -18,4 +18,7 @@ icon: lightbulb
 6. [图表页的工具栏标注](./dataview.md#页面标注)
 7. [截图功能](./dataview.md#屏幕截图)
 8. [XML配置的可视化修改方式](./xmlview.md#通道配置)
-
+9. [Web后端扩展支持](./mainpage.md#web后端扩展)
+10. [IP扫描助手](./setting.md#ip扫描助手)
+11. [本地数据库](./deviceinfo.md#本地数据库)
+12. [设备数据库的统计与抽检](./database.md#数据库查询)

@@ -15,12 +15,14 @@ export default sidebar({
         "xmlview.md",
         "setting.md",
         {
-          "text": "更多设置",
+          "text": "更多功能",
           icon: "laptop-code",
           children: [
             "mainpage.md",
             "slowsignal.md",
-            "jsonview.md"
+            "jsonview.md",
+            "database.md",
+            "deviceinfo.md",
           ]
         }
       ],
