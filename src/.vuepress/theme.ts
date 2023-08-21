@@ -11,6 +11,11 @@ export default hopeTheme({
   },
 
   iconAssets: "fontawesome-with-brands",
+  // iconAssets: [
+  //   "/brands.min.js",
+  //   "/fontawesome.min.js",
+  //   "/solid.min.js",
+  // ],
 
   logo: "/video.png",
 
