@@ -10,12 +10,9 @@ export default hopeTheme({
     url: "https://github.com/merrymerrys",
   },
 
-  iconAssets: "fontawesome-with-brands",
-  // iconAssets: [
-  //   "/brands.min.js",
-  //   "/fontawesome.min.js",
-  //   "/solid.min.js",
-  // ],
+  fullscreen: true,
+
+  iconAssets: "//at.alicdn.com/t/c/font_4225757_0pjmv2rfhi2.css",
 
   logo: "/video.png",
 

@@ -1,7 +1,7 @@
 ---
 title: 快速上手
 date: 2023-07-09
-icon: circle-info
+icon: info
 ---
 
 ::: info 工具介绍

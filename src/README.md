@@ -18,15 +18,15 @@ actions:
 
 features:
   - title: 极致性能
-    icon: clipboard-check
+    icon: articles
     details: Qt框架，C++编写。UI负载小，CPU占用低
 
   - title: 多种图表
-    icon: box-archive
+    icon: rank
     details: 支持常用测试图表功能，高刷新，易扩展
 
   - title: 自动采集
-    icon: table-columns
+    icon: list
     details: 内置多种测试模型，帮助完成各项测试任务表格
 
   - title: XML配置
@@ -46,7 +46,7 @@ features:
     details: 高效的设计模式，向下兼容过往版本，适应不同需求
 
   - title: 多开支持
-    icon: align-center
+    icon: more
     details: 支持测试窗口多开，网络断线重连，精简日志信息
         
 copyright: false
