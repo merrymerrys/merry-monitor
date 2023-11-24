@@ -12,14 +12,14 @@ category:
 
 图表功能囊括了项目中常见的几类图表。使用频率最高的位移、加速度图；使用频率较低的1/3倍频、轴心轨迹、转速图功能。
 
-并且提供了特征值聚合后的数据列表。
+同时提供了特征值聚合后的数据列表。
 :::
 
 ## 页面标注
 
 图表功能提供了常用的辅助控件，基本涵盖了大多数的应用场景与测试任务。
 
-::: info 从 V1.0 升级到 V2.0 后的几点变化：
+::: info V2.0版本的几点变化：
 
 1. 删除了缩放的横向/纵向选择按钮，不再对缩放范围进行限制。
 2. 增加了加速度分离成单独窗口的功能。
@@ -29,6 +29,15 @@ category:
 :::
 
 ![](./assets/chart.png)
+
+::: info V3.0版本的几点变化：
+1. 增加了寻峰功能。
+2. 新增了部分状态与鼠标位置的数据显示。
+3. 十字游标替换为滑块游标。
+4. 通道切换后，立即从历史数据中刷新图表内容。
+:::
+
+![](./assets/chart2.png)
 
 ## 通道选择
 
@@ -69,3 +78,33 @@ category:
 注：幅频最值表现的是频域图谱的信息。
 
 ![](./assets/peak.png)
+
+## 寻峰算法
+
+寻峰算法，峰值是指一个序列中的一个元素，大于等于其相邻区域内元素的值。
+
+从定义上看，这就是一个固定长度的窗口，从窗口中寻找最大值的过程(RMQ问题)。因此，通过滑动窗口加上单调队列维护区间最大值可以实现。
+
+寻峰过程中，要求保留前20个最大值。也是一个典型的TOP K问题，维护一个小顶堆即可。
+
+这里，我写了一段python代码，作为寻峰算法的一个简单实现。
+
+``` py
+def AMPD(data: list, size: int, window_length: int) -> list:
+    q = deque()
+    ans = []
+    mid = window_length // 2
+    for i in range(len(data)):
+        j = i - mid
+        while q and q[0] < j:
+            q.popleft()
+        while q and data[q[-1]] < data[i]:
+            q.pop()
+        q.append(i)
+        if q[0] == j:
+            if len(ans) < size:
+                heapq.heappush(ans, (data[j], j))
+            else:
+                heapq.heapopush(ans, (data[j], j))
+    return ans
+```

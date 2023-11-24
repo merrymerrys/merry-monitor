@@ -13,6 +13,7 @@ export default sidebar({
         "excel.md",
         "dataview.md",
         "xmlview.md",
+        "jsonview.md",
         "setting.md",
         {
           "text": "更多功能",
@@ -20,7 +21,6 @@ export default sidebar({
           children: [
             "mainpage.md",
             "slowsignal.md",
-            "jsonview.md",
             "database.md",
             "deviceinfo.md",
           ]
